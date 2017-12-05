@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+   
+</head>
+
+<style>
+
+
+
+#container{
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+  height: 700px;
+  border-radius: 5px;
+  background: rgba(48, 47, 47,3);
+  box-shadow: 1px 1px 50px #fff;
+  
+}
+/* Heading */
+.form h1{
+  font-family: 'Open Sans Condensed', sans-serif;
+  position: relative;
+  margin-top: 0px;
+  text-align: center;
+  font-size: 40px;
+  color: #ddd;
+  text-shadow: 3px 3px 10px #000;
+}
+
+/* Inputs */
+.form a,
+.form input,.form select,.form textarea{
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-decoration: none;
+  position:relative;
+  width: 50%;
+  display: block;
+  margin-top: 1% ;
+  margin-bottom: 2%;
+  margin-left:25%;
+  font-size: 17px;
+  color: #fff;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  background: rgba(186, 186, 186,0.1);
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  float:left;
+  
+}
+
+.form input:focus{
+  outline: none;
+  box-shadow: 3px 3px 10px #333;
+  background: rgba(186, 186, 186,0.18);
+}
+.form textarea:focus{
+  outline: none;
+  box-shadow: 3px 3px 10px #333;
+  background: rgba(186, 186, 186,0.18);
+}
+
+/* Placeholders */
+::-webkit-input-placeholder {
+   color: #ddd;  }
+:-moz-placeholder { /* Firefox 18- */
+   color: red;  }
+::-moz-placeholder {  /* Firefox 19+ */
+   color: red;  }
+:-ms-input-placeholder {  
+   color: #333;  }
+
+/* Link */
+.form a{
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+  padding: 4px 8px;
+  background: rgba(107,255,3,0.3);
+}
+
+.form a:hover{
+  opacity: 0.7;
+}
+
+#remember-container{
+  position: relative;
+  margin: -5px 20px;
+}
+
+.checkbox {
+  position: relative;
+  cursor: pointer;
+	-webkit-appearance: none;
+	padding: 5px;
+	border-radius: 4px;
+  background: rgba(3,3,3,.2);
+	display: inline-block;
+  width: 16px;
+  height: 15px;
+}
+
+.checkbox:checked:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.checkbox:checked {
+  background: rgba(3,3,3,.4);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.5);
+	color: #fff;
+}
+
+.checkbox:checked:after {
+	content: '\2714';
+	font-size: 10px;
+	position: absolute;
+	top: 0px;
+	left: 4px;
+	color: #fff;
+}
+
+.orange-btn{
+  background: rgba(87,198,255,.5);
+}
+.form .btn
+{
+	width:100px;
+	background-color:rgba(196, 17, 17,.5); 
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-align: center;
+	padding: 4px 8px;
+}
+</style>
+
+<body style="background-color:lightgray">
+
+<div id="container" class="form">
+<br><br>
+<h1 >Get In Touch </h1>
+<form action="contactController.php" method="POST">
+
+    <input type="name" name="name" placeholder="Name" required="required">
+	<input type="email" name="email" placeholder="E-mail" required="required" >
+    <textarea  name="message" placeholder="Message" required="required" rows="9" cols="25" style="margin-right:20px;"></textarea>
+   
+    <input type="submit" name="submit" value="Submit" class="btn "  >
+	
+</form>
+</div>
+
+
+
+
+</body>
+</html>
